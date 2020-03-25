@@ -12,10 +12,10 @@ Scenario Outline: Registration
 	Then my account must be registered with the Application 
 Examples:
 |gender|firstname|lastname|email|password|confirmpassword|
-|Female|Harika|Yarramsetty|mohithaHY@gmail.com|harikaY|harikaY|
-|Female|Kiranmai|Kiran|kiranKIRAN@gmail.com|kiranmai|kiranmai|
-|Female|Prasanna|Pras|prasaNNA@gmail.com|prasannaP|prasannaP|
-|Male|Aditya|Borra|adithyaaVArdhanBorra@gmail.com|trustXD|trustXD|	
+|Female|Harika|Yarramsetty|mohithaHYs@gmail.com|harikaY|harikaY|
+|Female|Kiranmai|Kiran|kiranKIRANs@gmail.com|kiranmai|kiranmai|
+|Female|Prasanna|Pras|prasaNNAs@gmail.com|prasannaP|prasannaP|
+|Male|Aditya|Borra|adithyaaVArdhanBorras@gmail.com|trustXD|trustXD|	
 
 
 Scenario Outline: Login 
