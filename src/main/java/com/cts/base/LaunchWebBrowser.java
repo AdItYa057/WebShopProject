@@ -5,6 +5,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -28,7 +29,7 @@ public class LaunchWebBrowser {
 		else if(browsername.equalsIgnoreCase("ie"))
 		{
 			System.setProperty("webdriver.ie.driver", "drivers/IEDriverServer.exe");
-			driver = new ChromeDriver();
+			driver = new InternetExplorerDriver();
 		}
 		else
 		{
@@ -41,7 +42,7 @@ public class LaunchWebBrowser {
 		driver.get("http://demowebshop.tricentis.com/");
 	}
 
-	public static void trerminate() {
+	public static void terminate() {
 		Date date = new Date();
 		String datestr = date.toString().replace(":", "-");
 

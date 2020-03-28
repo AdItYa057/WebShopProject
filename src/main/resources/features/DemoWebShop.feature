@@ -12,19 +12,17 @@ Scenario Outline: Registration
 	Then my account must be registered with the Application 
 Examples:
 |gender|firstname|lastname|email|password|confirmpassword|
-|Female|Harika|Yarramsetty|mohithaHYs@gmail.com|harikaY|harikaY|
-|Female|Kiranmai|Kiran|kiranKIRANs@gmail.com|kiranmai|kiranmai|
-|Female|Prasanna|Pras|prasaNNAs@gmail.com|prasannaP|prasannaP|
-|Male|Aditya|Borra|adithyaaVArdhanBorras@gmail.com|trustXD|trustXD|	
+|Female|Harika|Yarramsetty|mohithaHY.0001@gmail.com|harikaY|harikaY|
+|Female|Kiranmai|Kiran|kiranKIRANs.0002@gmail.com|kiranmai|kiranmai|
+|Female|Prasanna|Pras|prasaNNAs.0003@gmail.com|prasannaP|prasannaP|
+|Male|Aditya|Borra|adithyaaVArdhanBorra.0007@gmail.com|trustXD|trustXD|	
 
 
-Scenario Outline: Login 
-	When I enter email as '<username>' and enter password as '<password>' and click on Login 
+Scenario: Login 
+	When I enter login details from excel 'src/test/resources/Excel/Login.xlsx' with sheetname as  'LoginDetails' and click on Login 
 	Then I must login to the portal 
-Examples:
-|username|password|
-|trustxd@gmail.com|trustXD|
-|harikaY@gmail.com|harikaY|
+
+
 	
 
 Scenario: Search 

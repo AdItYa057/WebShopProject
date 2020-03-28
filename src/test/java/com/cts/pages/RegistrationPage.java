@@ -21,8 +21,10 @@ public class RegistrationPage {
 		this.driver = driver;
 	}
 	
-	public void fillRegistrationDetails(String gender,String firstname,String lastname,String email,String password,String confirmPassword)
+	public void fillRegistrationDetails(String gender,String firstname,String lastname,String email,String password,String confirmPassword) 
 	{
+		
+		
 		if (gender.equalsIgnoreCase("male"))
 			driver.findElement(genderMaleLocator).click();
 		else
