@@ -12,17 +12,13 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelRead {
 	
-	private static FileInputStream file = null;
+	private  FileInputStream file = null;
 
-	private static XSSFWorkbook book = null;
+	private  XSSFWorkbook book = null;
 
-	private static String[][] data = null;
+	private String[][] data = null;
 	
-	public static int dataRows;
-	
-	public static int dataCells;
-
-	public static String[][] getSheetIntoStringArray(String fileDetails, String sheetName) throws IOException {
+	public String[][] getSheetIntoStringArray(String fileDetails, String sheetName) throws IOException {
 
 		try {
 			file = new FileInputStream(fileDetails);

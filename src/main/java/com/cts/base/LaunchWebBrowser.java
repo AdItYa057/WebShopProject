@@ -16,10 +16,10 @@ import java.util.concurrent.TimeUnit;
 
 public class LaunchWebBrowser {
 
-	public static WebDriver driver;
+	public  WebDriver driver;
 
-	@Before
-	public static void LaunchWebDriver(String browsername)
+	
+	public  void LaunchWebDriver(String browsername)
 	{
 		if(browsername.equalsIgnoreCase("ff"))
 		{
@@ -42,7 +42,7 @@ public class LaunchWebBrowser {
 		driver.get("http://demowebshop.tricentis.com/");
 	}
 
-	public static void terminate() {
+	public void terminate() {
 		Date date = new Date();
 		String datestr = date.toString().replace(":", "-");
 

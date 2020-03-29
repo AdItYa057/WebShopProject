@@ -26,13 +26,14 @@ import io.cucumber.java.en.When;
 public class StepDefinitions {
 
 	WebDriver driver;
+	LaunchWebBrowser browser = new LaunchWebBrowser();
 	
 	
 	@Given("I have a browser with DemoWebShop Application")
 	public void i_have_a_browser_with_DemoWebShop_Application() {
 		//Launching the Browser with either Chrome(ch, default) or Firefox(ff) or Internet explorer(ie)
-		LaunchWebBrowser.LaunchWebDriver("ch");
-		this.driver = LaunchWebBrowser.driver;
+		browser.LaunchWebDriver("ch");
+		this.driver = browser.driver;
 
 	}
 
@@ -64,7 +65,7 @@ public class StepDefinitions {
 		//Asserting and dsiplaying whether Login is successful or not
 		Assert.assertTrue("Not registered", ele);
 		//terminating the current scenario
-		LaunchWebBrowser.terminate();
+		browser.terminate();
 
 	}
 
@@ -79,8 +80,10 @@ public class StepDefinitions {
 		//clicking on Login Icon
 		home.clickonLogin();
 		
+		ExcelRead excel = new ExcelRead();
+		
 		//getting login details from excel
-		String[][] data = ExcelRead.getSheetIntoStringArray(fileDetails, sheetName);
+		String[][] data = excel.getSheetIntoStringArray(fileDetails, sheetName);
 		
 		//entering Login details
 		login.loginDetils(data[0][0], data[0][1]);
@@ -99,7 +102,7 @@ public class StepDefinitions {
 		Assert.assertTrue("Invalid Credentials", logoutele);
 		
 		//closing the scenario
-		LaunchWebBrowser.terminate();
+		browser.terminate();
 	}
 
 	@When("I enter {string} in search bar and click on search")
@@ -125,7 +128,7 @@ public class StepDefinitions {
 			Assert.fail("Got wrong product suggestions");
 		
 		//closing the scenario
-		LaunchWebBrowser.terminate();
+		browser.terminate();
 	}
 
 	@When("I click on Books in the Homepage and select {string} book")
@@ -150,7 +153,7 @@ public class StepDefinitions {
 		System.out.println(books.getBookPrice());
 		
 		//closing the scenario
-		LaunchWebBrowser.terminate();
+		browser.terminate();
 	}
 
 	@When("I click on Computers in the Homepage and click on {string} and select {string}")
@@ -176,7 +179,7 @@ public class StepDefinitions {
 		Assert.assertTrue("Wrong CPU type", cpuType.equalsIgnoreCase("Intel"));
 		
 		//closing the scenario
-		LaunchWebBrowser.terminate();
+		browser.terminate();
 	}
 	
 }

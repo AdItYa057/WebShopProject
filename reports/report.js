@@ -37,7 +37,7 @@ formatter.examples({
         "Female",
         "Harika",
         "Yarramsetty",
-        "mohithaHY.001@gmail.com",
+        "mohithaHY.100011@gmail.com",
         "harikaY",
         "harikaY"
       ]
@@ -47,7 +47,7 @@ formatter.examples({
         "Female",
         "Kiranmai",
         "Kiran",
-        "kiranKIRANs.002@gmail.com",
+        "kiranKIRANs.200022@gmail.com",
         "kiranmai",
         "kiranmai"
       ]
@@ -57,7 +57,7 @@ formatter.examples({
         "Female",
         "Prasanna",
         "Pras",
-        "prasaNNAs.003@gmail.com",
+        "prasaNNAs.300033@gmail.com",
         "prasannaP",
         "prasannaP"
       ]
@@ -67,7 +67,7 @@ formatter.examples({
         "Male",
         "Aditya",
         "Borra",
-        "adithyaaVArdhanBorra.007@gmail.com",
+        "adithyaaVArdhanBorra.700007@gmail.com",
         "trustXD",
         "trustXD"
       ]
@@ -95,7 +95,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "I enter gender as \u0027Female\u0027 and firstname as \u0027Harika\u0027 and lastname as \u0027Yarramsetty\u0027 and email as \u0027mohithaHY.001@gmail.com\u0027 and password as \u0027harikaY\u0027 and confirmpassword as \u0027harikaY\u0027",
+  "name": "I enter gender as \u0027Female\u0027 and firstname as \u0027Harika\u0027 and lastname as \u0027Yarramsetty\u0027 and email as \u0027mohithaHY.100011@gmail.com\u0027 and password as \u0027harikaY\u0027 and confirmpassword as \u0027harikaY\u0027",
   "keyword": "When "
 });
 formatter.match({
@@ -135,7 +135,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "I enter gender as \u0027Female\u0027 and firstname as \u0027Kiranmai\u0027 and lastname as \u0027Kiran\u0027 and email as \u0027kiranKIRANs.002@gmail.com\u0027 and password as \u0027kiranmai\u0027 and confirmpassword as \u0027kiranmai\u0027",
+  "name": "I enter gender as \u0027Female\u0027 and firstname as \u0027Kiranmai\u0027 and lastname as \u0027Kiran\u0027 and email as \u0027kiranKIRANs.200022@gmail.com\u0027 and password as \u0027kiranmai\u0027 and confirmpassword as \u0027kiranmai\u0027",
   "keyword": "When "
 });
 formatter.match({
@@ -175,7 +175,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "I enter gender as \u0027Female\u0027 and firstname as \u0027Prasanna\u0027 and lastname as \u0027Pras\u0027 and email as \u0027prasaNNAs.003@gmail.com\u0027 and password as \u0027prasannaP\u0027 and confirmpassword as \u0027prasannaP\u0027",
+  "name": "I enter gender as \u0027Female\u0027 and firstname as \u0027Prasanna\u0027 and lastname as \u0027Pras\u0027 and email as \u0027prasaNNAs.300033@gmail.com\u0027 and password as \u0027prasannaP\u0027 and confirmpassword as \u0027prasannaP\u0027",
   "keyword": "When "
 });
 formatter.match({
@@ -215,7 +215,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "I enter gender as \u0027Male\u0027 and firstname as \u0027Aditya\u0027 and lastname as \u0027Borra\u0027 and email as \u0027adithyaaVArdhanBorra.007@gmail.com\u0027 and password as \u0027trustXD\u0027 and confirmpassword as \u0027trustXD\u0027",
+  "name": "I enter gender as \u0027Male\u0027 and firstname as \u0027Aditya\u0027 and lastname as \u0027Borra\u0027 and email as \u0027adithyaaVArdhanBorra.700007@gmail.com\u0027 and password as \u0027trustXD\u0027 and confirmpassword as \u0027trustXD\u0027",
   "keyword": "When "
 });
 formatter.match({
